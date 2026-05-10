@@ -1,0 +1,96 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "planner_msgs/srv/PlanPath_Request",
+      "fields": [
+        {
+          "name": "start",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "geometry_msgs/msg/Point"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "goal",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "geometry_msgs/msg/Point"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "min_altitude",
+          "type": {
+            "type_id": 11,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "max_altitude",
+          "type": {
+            "type_id": 11,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "geometry_msgs/msg/Point",
+        "fields": [
+          {
+            "name": "x",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "y",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "z",
+            "type": {
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "planner_msgs/srv/PlanPath_Request",
+      "hash_string": "RIHS01_359d86da376899b69d7d91fd34607244d3070f8459b7d3decc9933cfd17d14bb"
+    },
+    {
+      "type_name": "geometry_msgs/msg/Point",
+      "hash_string": "RIHS01_6963084842a9b04494d6b2941d11444708d892da2f4b09843b9c43f42a7f6881"
+    }
+  ]
+}

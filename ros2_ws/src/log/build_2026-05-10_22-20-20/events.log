@@ -1,0 +1,83 @@
+[0.000000] (-) TimerEvent: {}
+[0.000405] (-) JobUnselected: {'identifier': 'planner_msgs'}
+[0.000520] (global_planner) JobQueued: {'identifier': 'global_planner', 'dependencies': OrderedDict({'planner_msgs': '/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/install/planner_msgs'})}
+[0.000596] (global_planner) JobStarted: {'identifier': 'global_planner'}
+[0.099024] (-) TimerEvent: {}
+[0.199493] (-) TimerEvent: {}
+[0.300560] (-) TimerEvent: {}
+[0.401000] (-) TimerEvent: {}
+[0.502570] (-) TimerEvent: {}
+[0.602967] (-) TimerEvent: {}
+[0.703403] (-) TimerEvent: {}
+[0.803855] (-) TimerEvent: {}
+[0.905746] (-) TimerEvent: {}
+[1.007519] (-) TimerEvent: {}
+[1.107812] (-) TimerEvent: {}
+[1.208240] (-) TimerEvent: {}
+[1.308707] (-) TimerEvent: {}
+[1.409224] (-) TimerEvent: {}
+[1.510965] (-) TimerEvent: {}
+[1.611509] (-) TimerEvent: {}
+[1.712097] (-) TimerEvent: {}
+[1.812803] (-) TimerEvent: {}
+[1.915866] (-) TimerEvent: {}
+[2.016555] (-) TimerEvent: {}
+[2.117066] (-) TimerEvent: {}
+[2.218724] (-) TimerEvent: {}
+[2.319126] (-) TimerEvent: {}
+[2.419586] (-) TimerEvent: {}
+[2.520569] (-) TimerEvent: {}
+[2.620941] (-) TimerEvent: {}
+[2.721431] (-) TimerEvent: {}
+[2.823573] (-) TimerEvent: {}
+[2.923906] (-) TimerEvent: {}
+[3.024082] (-) TimerEvent: {}
+[3.124341] (-) TimerEvent: {}
+[3.225273] (-) TimerEvent: {}
+[3.325785] (-) TimerEvent: {}
+[3.426576] (-) TimerEvent: {}
+[3.527053] (-) TimerEvent: {}
+[3.545626] (global_planner) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/global_planner', 'build', '--build-base', '/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/build/global_planner/build', 'install', '--record', '/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/build/global_planner/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/global_planner', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'MAIL': '/var/mail/seg', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'seg', 'SSH_CLIENT': '172.30.72.37 52107 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/install/planner_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/seg', 'OLDPWD': '/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/global_planner', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'seg', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/seg/.local/bin:/home/seg/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/snap/bin', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/install/planner_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/build/global_planner', 'SSH_CONNECTION': '172.30.72.37 52107 192.168.122.34 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/build/global_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/install/global_planner/lib/python3.12/site-packages:/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/install/planner_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/install/planner_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[3.627228] (-) TimerEvent: {}
+[3.728589] (-) TimerEvent: {}
+[3.829232] (-) TimerEvent: {}
+[3.835697] (global_planner) StdoutLine: {'line': b'running egg_info\n'}
+[3.836083] (global_planner) StdoutLine: {'line': b'creating ../build/global_planner/global_planner.egg-info\n'}
+[3.854105] (global_planner) StdoutLine: {'line': b'writing ../build/global_planner/global_planner.egg-info/PKG-INFO\n'}
+[3.854378] (global_planner) StdoutLine: {'line': b'writing dependency_links to ../build/global_planner/global_planner.egg-info/dependency_links.txt\n'}
+[3.854665] (global_planner) StdoutLine: {'line': b'writing entry points to ../build/global_planner/global_planner.egg-info/entry_points.txt\n'}
+[3.854888] (global_planner) StdoutLine: {'line': b'writing requirements to ../build/global_planner/global_planner.egg-info/requires.txt\n'}
+[3.855001] (global_planner) StdoutLine: {'line': b'writing top-level names to ../build/global_planner/global_planner.egg-info/top_level.txt\n'}
+[3.855110] (global_planner) StdoutLine: {'line': b"writing manifest file '../build/global_planner/global_planner.egg-info/SOURCES.txt'\n"}
+[3.890712] (global_planner) StdoutLine: {'line': b"reading manifest file '../build/global_planner/global_planner.egg-info/SOURCES.txt'\n"}
+[3.891230] (global_planner) StdoutLine: {'line': b"writing manifest file '../build/global_planner/global_planner.egg-info/SOURCES.txt'\n"}
+[3.891573] (global_planner) StdoutLine: {'line': b'running build\n'}
+[3.891781] (global_planner) StdoutLine: {'line': b'running build_py\n'}
+[3.891994] (global_planner) StdoutLine: {'line': b'creating /home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/build/global_planner/build\n'}
+[3.892907] (global_planner) StdoutLine: {'line': b'creating /home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/build/global_planner/build/lib\n'}
+[3.893093] (global_planner) StdoutLine: {'line': b'creating /home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/build/global_planner/build/lib/global_planner\n'}
+[3.893245] (global_planner) StdoutLine: {'line': b'copying global_planner/planner_node.py -> /home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/build/global_planner/build/lib/global_planner\n'}
+[3.893393] (global_planner) StdoutLine: {'line': b'copying global_planner/__init__.py -> /home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/build/global_planner/build/lib/global_planner\n'}
+[3.893577] (global_planner) StdoutLine: {'line': b'running install\n'}
+[3.899734] (global_planner) StdoutLine: {'line': b'running install_lib\n'}
+[3.919165] (global_planner) StdoutLine: {'line': b'creating /home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/install/global_planner/lib/python3.12/site-packages/global_planner\n'}
+[3.919417] (global_planner) StdoutLine: {'line': b'copying /home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/build/global_planner/build/lib/global_planner/planner_node.py -> /home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/install/global_planner/lib/python3.12/site-packages/global_planner\n'}
+[3.919639] (global_planner) StdoutLine: {'line': b'copying /home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/build/global_planner/build/lib/global_planner/__init__.py -> /home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/install/global_planner/lib/python3.12/site-packages/global_planner\n'}
+[3.919795] (global_planner) StdoutLine: {'line': b'byte-compiling /home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/install/global_planner/lib/python3.12/site-packages/global_planner/planner_node.py to planner_node.cpython-312.pyc\n'}
+[3.920113] (global_planner) StdoutLine: {'line': b'byte-compiling /home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/install/global_planner/lib/python3.12/site-packages/global_planner/__init__.py to __init__.cpython-312.pyc\n'}
+[3.920332] (global_planner) StdoutLine: {'line': b'running install_data\n'}
+[3.920698] (global_planner) StdoutLine: {'line': b'creating /home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/install/global_planner/share/ament_index\n'}
+[3.920936] (global_planner) StdoutLine: {'line': b'creating /home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/install/global_planner/share/ament_index/resource_index\n'}
+[3.921134] (global_planner) StdoutLine: {'line': b'creating /home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/install/global_planner/share/ament_index/resource_index/packages\n'}
+[3.921289] (global_planner) StdoutLine: {'line': b'copying resource/global_planner -> /home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/install/global_planner/share/ament_index/resource_index/packages\n'}
+[3.921435] (global_planner) StdoutLine: {'line': b'copying package.xml -> /home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/install/global_planner/share/global_planner\n'}
+[3.921626] (global_planner) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.929331] (-) TimerEvent: {}
+[3.940528] (global_planner) StdoutLine: {'line': b'Copying ../build/global_planner/global_planner.egg-info to /home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/install/global_planner/lib/python3.12/site-packages/global_planner-0.0.0-py3.12.egg-info\n'}
+[3.940762] (global_planner) StdoutLine: {'line': b'running install_scripts\n'}
+[4.029465] (-) TimerEvent: {}
+[4.063337] (global_planner) StdoutLine: {'line': b'Installing planner_node script to /home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/install/global_planner/lib/global_planner\n'}
+[4.063707] (global_planner) StdoutLine: {'line': b"writing list of installed files to '/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/build/global_planner/install.log'\n"}
+[4.090385] (global_planner) CommandEnded: {'returncode': 0}
+[4.105670] (global_planner) JobEnded: {'identifier': 'global_planner', 'rc': 0}
+[4.107019] (-) EventReactorShutdown: {}

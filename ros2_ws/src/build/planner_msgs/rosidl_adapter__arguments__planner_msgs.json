@@ -1,0 +1,8 @@
+{
+  "package_name": "planner_msgs",
+  "non_idl_tuples": [
+    "/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/planner_msgs:msg/NoFlyZone.msg",
+    "/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/planner_msgs:msg/NoFlyZoneArray.msg",
+    "/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/planner_msgs:srv/PlanPath.srv"
+  ]
+}

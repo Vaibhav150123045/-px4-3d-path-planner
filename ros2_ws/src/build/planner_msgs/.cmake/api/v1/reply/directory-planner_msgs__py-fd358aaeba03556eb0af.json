@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "planner_msgs__py",
+		"source" : "/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/build/planner_msgs/planner_msgs__py"
+	}
+}

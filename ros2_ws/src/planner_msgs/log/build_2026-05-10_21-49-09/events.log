@@ -1,0 +1,62 @@
+[0.000000] (-) TimerEvent: {}
+[0.000946] (planner_msgs) JobQueued: {'identifier': 'planner_msgs', 'dependencies': OrderedDict()}
+[0.001062] (planner_msgs) JobStarted: {'identifier': 'planner_msgs'}
+[0.011283] (planner_msgs) JobProgress: {'identifier': 'planner_msgs', 'progress': 'cmake'}
+[0.011552] (planner_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/planner_msgs', '-DCMAKE_INSTALL_PREFIX=/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/planner_msgs/install/planner_msgs'], 'cwd': '/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/planner_msgs/build/planner_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'MAIL': '/var/mail/seg', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'seg', 'SSH_CLIENT': '172.30.72.37 52107 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/seg', 'OLDPWD': '/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'seg', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/seg/.local/bin:/home/seg/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/snap/bin', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/planner_msgs/build/planner_msgs', 'SSH_CONNECTION': '172.30.72.37 52107 192.168.122.34 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099600] (-) TimerEvent: {}
+[0.123764] (planner_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.189445] (planner_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.200279] (-) TimerEvent: {}
+[0.202886] (planner_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.301296] (-) TimerEvent: {}
+[0.353471] (planner_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.366076] (planner_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.366453] (planner_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.366823] (planner_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.380709] (planner_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.401525] (-) TimerEvent: {}
+[0.503491] (-) TimerEvent: {}
+[0.542385] (planner_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.562613] (planner_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.563175] (planner_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.564083] (planner_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.570612] (planner_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.604230] (-) TimerEvent: {}
+[0.704615] (-) TimerEvent: {}
+[0.767766] (planner_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.806263] (-) TimerEvent: {}
+[0.906570] (-) TimerEvent: {}
+[0.919369] (planner_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 2.0.3 (/opt/ros/jazzy/share/builtin_interfaces/cmake)\n'}
+[0.968714] (planner_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.988394] (planner_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.006635] (-) TimerEvent: {}
+[1.007751] (planner_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.032240] (planner_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.051859] (planner_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[1.076679] (planner_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[1.082958] (planner_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.7 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[1.106784] (-) TimerEvent: {}
+[1.207307] (-) TimerEvent: {}
+[1.284257] (planner_msgs) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.7 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[1.307426] (-) TimerEvent: {}
+[1.409356] (-) TimerEvent: {}
+[1.509861] (-) TimerEvent: {}
+[1.610307] (-) TimerEvent: {}
+[1.713450] (-) TimerEvent: {}
+[1.813789] (-) TimerEvent: {}
+[1.914472] (-) TimerEvent: {}
+[2.014847] (-) TimerEvent: {}
+[2.115937] (-) TimerEvent: {}
+[2.148524] (planner_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:223 (message):\n'}
+[2.148896] (planner_msgs) StderrLine: {'line': b'  Packages installing interfaces must include\n'}
+[2.149071] (planner_msgs) StderrLine: {'line': b"  '<member_of_group>rosidl_interface_packages</member_of_group>' in their\n"}
+[2.149257] (planner_msgs) StderrLine: {'line': b'  package.xml\n'}
+[2.149409] (planner_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.149552] (planner_msgs) StderrLine: {'line': b'  CMakeLists.txt:18 (rosidl_generate_interfaces)\n'}
+[2.149697] (planner_msgs) StderrLine: {'line': b'\n'}
+[2.149841] (planner_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[2.149983] (planner_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.165171] (planner_msgs) CommandEnded: {'returncode': 1}
+[2.211254] (planner_msgs) JobEnded: {'identifier': 'planner_msgs', 'rc': 1}
+[2.216035] (-) TimerEvent: {}
+[2.222730] (-) EventReactorShutdown: {}

@@ -1,0 +1,11 @@
+# Request
+geometry_msgs/Point start          # Starting 3D coordinate
+geometry_msgs/Point goal           # Target 3D coordinate
+float64 min_altitude               # UAV floor constraint for this specific mission
+float64 max_altitude               # UAV ceiling constraint for this specific mission
+---
+# Response
+bool success                       # True if a path was found, False if impossible
+nav_msgs/Path path                 # The resulting sequence of 3D waypoints
+float64 path_length                # Total distance of the calculated path
+string message                     # Debug message (e.g., "Goal inside No-Fly Zone")

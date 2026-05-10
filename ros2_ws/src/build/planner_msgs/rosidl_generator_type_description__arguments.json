@@ -1,0 +1,16 @@
+{
+  "package_name": "planner_msgs",
+  "output_dir": "/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/build/planner_msgs/rosidl_generator_type_description/planner_msgs",
+  "idl_tuples": [
+    "/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/build/planner_msgs/rosidl_adapter/planner_msgs:msg/NoFlyZone.idl",
+    "/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/build/planner_msgs/rosidl_adapter/planner_msgs:msg/NoFlyZoneArray.idl",
+    "/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/build/planner_msgs/rosidl_adapter/planner_msgs:srv/PlanPath.idl"
+  ],
+  "include_paths": [
+    "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs",
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "nav_msgs:/opt/ros/jazzy/share/nav_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs"
+  ]
+}

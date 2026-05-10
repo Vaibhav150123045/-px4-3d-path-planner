@@ -1,0 +1,41 @@
+[0.114s] Invoking command in '/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/build/planner_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/planner_msgs -DCMAKE_INSTALL_PREFIX=/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/install/planner_msgs
+[1.674s] -- The C compiler identification is GNU 13.3.0
+[2.116s] -- The CXX compiler identification is GNU 13.3.0
+[2.252s] -- Detecting C compiler ABI info
+[2.474s] -- Detecting C compiler ABI info - done
+[2.498s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.499s] -- Detecting C compile features
+[2.523s] -- Detecting C compile features - done
+[2.544s] -- Detecting CXX compiler ABI info
+[2.718s] -- Detecting CXX compiler ABI info - done
+[2.740s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.740s] -- Detecting CXX compile features
+[2.740s] -- Detecting CXX compile features - done
+[2.959s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.313s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.809s] -- Found builtin_interfaces: 2.0.3 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+[4.308s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[4.437s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[4.566s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.660s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.759s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[4.925s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[5.016s] [31mCMake Error at CMakeLists.txt:14 (find_package):
+[5.016s]   By not providing "Findament_lint_auto.cmake" in CMAKE_MODULE_PATH this
+[5.016s]   project has asked CMake to find a package configuration file provided by
+[5.017s]   "ament_lint_auto", but CMake did not find one.
+[5.017s] 
+[5.017s]   Could not find a package configuration file provided by "ament_lint_auto"
+[5.017s]   with any of the following names:
+[5.017s] 
+[5.017s]     ament_lint_autoConfig.cmake
+[5.017s]     ament_lint_auto-config.cmake
+[5.018s] 
+[5.018s]   Add the installation prefix of "ament_lint_auto" to CMAKE_PREFIX_PATH or
+[5.018s]   set "ament_lint_auto_DIR" to a directory containing one of the above files.
+[5.018s]   If "ament_lint_auto" provides a separate development package or SDK, be
+[5.018s]   sure it has been installed.
+[5.018s] 
+[5.019s] [0m
+[5.019s] -- Configuring incomplete, errors occurred!
+[5.031s] Invoked command in '/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/build/planner_msgs' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/planner_msgs -DCMAKE_INSTALL_PREFIX=/home/seg/lecture7/-px4-3d-path-planner/ros2_ws/src/install/planner_msgs

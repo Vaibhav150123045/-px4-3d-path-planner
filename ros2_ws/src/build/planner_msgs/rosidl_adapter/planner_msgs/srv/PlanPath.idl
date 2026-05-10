@@ -1,0 +1,49 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from planner_msgs/srv/PlanPath.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+#include "nav_msgs/msg/Path.idl"
+
+module planner_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request")
+    struct PlanPath_Request {
+      @verbatim (language="comment", text=
+        "Starting 3D coordinate")
+      geometry_msgs::msg::Point start;
+
+      @verbatim (language="comment", text=
+        "Target 3D coordinate")
+      geometry_msgs::msg::Point goal;
+
+      @verbatim (language="comment", text=
+        "UAV floor constraint for this specific mission")
+      double min_altitude;
+
+      @verbatim (language="comment", text=
+        "UAV ceiling constraint for this specific mission")
+      double max_altitude;
+    };
+    @verbatim (language="comment", text=
+      "Response")
+    struct PlanPath_Response {
+      @verbatim (language="comment", text=
+        "True if a path was found, False if impossible")
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "The resulting sequence of 3D waypoints")
+      nav_msgs::msg::Path path;
+
+      @verbatim (language="comment", text=
+        "Total distance of the calculated path")
+      double path_length;
+
+      @verbatim (language="comment", text=
+        "Debug message (e.g., \"Goal inside No-Fly Zone\")")
+      string message;
+    };
+  };
+};

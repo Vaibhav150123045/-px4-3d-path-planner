@@ -1,0 +1,33 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from planner_msgs/msg/NoFlyZone.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+
+module planner_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Defines a cylindrical no-fly zone in 3D space")
+    struct NoFlyZone {
+      @verbatim (language="comment", text=
+        "Unique identifier for the zone")
+      string id;
+
+      @verbatim (language="comment", text=
+        "X, Y center of the no-fly zone")
+      geometry_msgs::msg::Point center;
+
+      @verbatim (language="comment", text=
+        "Radius of the no-fly zone in meters")
+      double radius;
+
+      @verbatim (language="comment", text=
+        "Minimum altitude of the zone (usually 0)")
+      double min_altitude;
+
+      @verbatim (language="comment", text=
+        "Maximum altitude of the zone")
+      double max_altitude;
+    };
+  };
+};
