@@ -1,3 +1,11 @@
+
+#### DevOps for Cyber-Physical Systems 2026
+
+Vaibhav Motwani, 23-139-660
+
+Repository: [link](https://github.com/Vaibhav150123045/-px4-3d-path-planne)
+
+
 # 3D Path Planning for Autonomous UAVs
 
 A ROS2-based autonomous path planning system for unmanned aerial vehicles operating in complex 3D environments. This project implements robust collision avoidance using spatial mapping and optimized pathfinding algorithms, deployed on PX4 autopilot through MAVSDK for real-world flight validation.
@@ -167,7 +175,7 @@ Wait for the message indicating successful initialization (autopilot ready at `p
 Spawn obstacles and landmarks in the simulated environment:
 
 ```bash
-docker exec -it px4_sitl /root/-px4-3d-path-planner/helpful_scripts/spawn_artifacts.sh
+docker exec -it px4_sitl /root/-px4-3d-path-planner/helper_scripts/spawn_artifacts.sh
 ```
 
 This loads 10+ entities including buildings, vegetation, and position markers.
@@ -273,7 +281,7 @@ Compute and execute the autonomous flight trajectory:
 docker exec -it px4_sitl bash -lc '
   source /opt/ros/jazzy/setup.bash &&
   source /root/-px4-3d-path-planner/ros2_ws/install/setup.bash &&
-  python3 /root/-px4-3d-path-planner/helpful_scripts/mission_run.py
+  python3 /root/-px4-3d-path-planner/helper_scripts/mission_run.py
 '
 ```
 
@@ -352,7 +360,7 @@ docker exec -it px4_sitl bash -lc '
 ## Project Structure
 
 ```
-3d-path-planner/
+-px4-3d-path-planner/
 ├── README.md
 ├── docker/
 │   ├── Dockerfile                        # Image extensions
@@ -364,22 +372,19 @@ docker exec -it px4_sitl bash -lc '
 │       │   ├── package.xml
 │       │   ├── msg/RestrictedZone.msg
 │       │   └── srv/ComputePath.srv
-│       └── planning_module/              # Pathfinding implementation
+│       └── global_planner/              # Pathfinding implementation
 │           ├── package.xml
 │           ├── setup.py
 │           ├── setup.cfg
-│           └── planning_module/
+│           └── global_planner/
 │               ├── __init__.py
-│               ├── service_node.py
-│               ├── planner.py
-│               └── utilities.py
-├── scripts/
-│   ├── populate_scene.sh                 # Scene initialization
-│   ├── cleanup_scene.sh                  # Environment teardown
-│   ├── health_check.py                   # System validation
-│   └── execute_mission.py                # Autonomous flight
+│               └── planner_node.py
+├── helper_scripts/
+│   ├── spawn_artifacts.sh                 # Scene initialization
+│   ├── remove_artifacts.sh                  # Environment teardown
+│   └── mission_run.py                # Autonomous flight
 └── worlds/
-    └── simulation_world.sdf              # Gazebo environment
+    └── demo_world.sdf              # Gazebo environment
 ```
 
 ---
