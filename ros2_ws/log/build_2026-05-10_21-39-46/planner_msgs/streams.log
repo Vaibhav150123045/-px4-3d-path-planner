@@ -1,0 +1,331 @@
+[0.013s] Invoking command in '/root/-px4-3d-path-planner/ros2_ws/build/planner_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/-px4-3d-path-planner/ros2_ws/src/planner_msgs -DCMAKE_INSTALL_PREFIX=/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs
+[0.700s] -- The C compiler identification is GNU 13.3.0
+[0.914s] -- The CXX compiler identification is GNU 13.3.0
+[1.037s] -- Detecting C compiler ABI info
+[1.233s] -- Detecting C compiler ABI info - done
+[1.259s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.260s] -- Detecting C compile features
+[1.270s] -- Detecting C compile features - done
+[1.308s] -- Detecting CXX compiler ABI info
+[1.509s] -- Detecting CXX compiler ABI info - done
+[1.535s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.536s] -- Detecting CXX compile features
+[1.537s] -- Detecting CXX compile features - done
+[2.028s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.441s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.156s] -- Found builtin_interfaces: 2.0.3 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+[3.613s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[3.774s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[3.952s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.138s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.252s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[4.535s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[4.589s] -- Found geometry_msgs: 5.3.7 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[4.846s] -- Found nav_msgs: 5.3.7 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[6.641s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[8.588s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.303s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.332s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[9.637s] -- Found PythonExtra: /usr/bin/python3  
+[10.511s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[10.780s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[10.874s] -- Configuring done (10.9s)
+[11.012s] -- Generating done (0.1s)
+[11.025s] -- Build files have been written to: /root/-px4-3d-path-planner/ros2_ws/build/planner_msgs
+[11.040s] Invoked command in '/root/-px4-3d-path-planner/ros2_ws/build/planner_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/-px4-3d-path-planner/ros2_ws/src/planner_msgs -DCMAKE_INSTALL_PREFIX=/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs
+[11.041s] Invoking command in '/root/-px4-3d-path-planner/ros2_ws/build/planner_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/-px4-3d-path-planner/ros2_ws/build/planner_msgs -- -j8 -l8
+[11.145s] [  1%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[11.145s] [  3%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[11.169s] [  3%] Built target ament_cmake_python_copy_planner_msgs
+[11.502s] running egg_info
+[11.504s] creating planner_msgs.egg-info
+[11.646s] writing planner_msgs.egg-info/PKG-INFO
+[11.646s] writing dependency_links to planner_msgs.egg-info/dependency_links.txt
+[11.646s] writing top-level names to planner_msgs.egg-info/top_level.txt
+[11.646s] writing manifest file 'planner_msgs.egg-info/SOURCES.txt'
+[11.720s] [  3%] Built target planner_msgs__rosidl_generator_type_description
+[11.734s] reading manifest file 'planner_msgs.egg-info/SOURCES.txt'
+[11.735s] writing manifest file 'planner_msgs.egg-info/SOURCES.txt'
+[11.741s] [  5%] [34m[1mGenerating C code for ROS interfaces[0m
+[11.766s] [  5%] Built target ament_cmake_python_build_planner_msgs_egg
+[11.771s] [  7%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[11.799s] [  7%] Built target planner_msgs__rs
+[12.397s] [  7%] Built target planner_msgs__cpp
+[12.494s] [  9%] [32mBuilding C object CMakeFiles/planner_msgs__rosidl_generator_c.dir/rosidl_generator_c/planner_msgs/msg/detail/no_fly_zone_array__type_support.c.o[0m
+[12.496s] [ 10%] [32mBuilding C object CMakeFiles/planner_msgs__rosidl_generator_c.dir/rosidl_generator_c/planner_msgs/msg/detail/no_fly_zone__type_support.c.o[0m
+[12.499s] [ 12%] [32mBuilding C object CMakeFiles/planner_msgs__rosidl_generator_c.dir/rosidl_generator_c/planner_msgs/msg/detail/no_fly_zone__description.c.o[0m
+[12.501s] [ 16%] [32mBuilding C object CMakeFiles/planner_msgs__rosidl_generator_c.dir/rosidl_generator_c/planner_msgs/msg/detail/no_fly_zone__functions.c.o[0m
+[12.502s] [ 16%] [32mBuilding C object CMakeFiles/planner_msgs__rosidl_generator_c.dir/rosidl_generator_c/planner_msgs/msg/detail/no_fly_zone_array__description.c.o[0m
+[12.502s] [ 18%] [32mBuilding C object CMakeFiles/planner_msgs__rosidl_generator_c.dir/rosidl_generator_c/planner_msgs/msg/detail/no_fly_zone_array__functions.c.o[0m
+[12.502s] [ 20%] [32mBuilding C object CMakeFiles/planner_msgs__rosidl_generator_c.dir/rosidl_generator_c/planner_msgs/srv/detail/plan_path__description.c.o[0m
+[12.502s] [ 21%] [32mBuilding C object CMakeFiles/planner_msgs__rosidl_generator_c.dir/rosidl_generator_c/planner_msgs/srv/detail/plan_path__functions.c.o[0m
+[12.852s] [ 23%] [32mBuilding C object CMakeFiles/planner_msgs__rosidl_generator_c.dir/rosidl_generator_c/planner_msgs/srv/detail/plan_path__type_support.c.o[0m
+[13.017s] [ 25%] [32m[1mLinking C shared library libplanner_msgs__rosidl_generator_c.so[0m
+[13.097s] [ 25%] Built target planner_msgs__rosidl_generator_c
+[13.124s] [ 27%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[13.124s] [ 30%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[13.124s] [ 30%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[13.124s] [ 32%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[13.130s] [ 36%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[13.130s] [ 36%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[13.616s] [ 38%] [32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/planner_msgs/msg/no_fly_zone__type_support.cpp.o[0m
+[13.617s] [ 40%] [32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/planner_msgs/msg/no_fly_zone__type_support.cpp.o[0m
+[13.618s] [ 41%] [32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/planner_msgs/msg/no_fly_zone_array__type_support.cpp.o[0m
+[13.618s] [ 43%] [32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/planner_msgs/srv/plan_path__type_support.cpp.o[0m
+[13.643s] [ 45%] [32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/planner_msgs/msg/detail/no_fly_zone__type_support.cpp.o[0m
+[13.730s] [ 47%] [32mBuilding C object CMakeFiles/planner_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/planner_msgs/msg/detail/no_fly_zone__type_support.c.o[0m
+[13.829s] [ 49%] [32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/planner_msgs/msg/no_fly_zone_array__type_support.cpp.o[0m
+[13.839s] [ 50%] [32mBuilding C object CMakeFiles/planner_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/planner_msgs/msg/detail/no_fly_zone_array__type_support.c.o[0m
+[13.873s] [ 52%] [32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/planner_msgs/msg/detail/no_fly_zone__type_support_c.cpp.o[0m
+[13.899s] [ 54%] [32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/planner_msgs/srv/plan_path__type_support.cpp.o[0m
+[13.941s] [ 56%] [32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/planner_msgs/msg/detail/dds_fastrtps/no_fly_zone__type_support.cpp.o[0m
+[13.988s] [ 58%] [32mBuilding C object CMakeFiles/planner_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/planner_msgs/srv/detail/plan_path__type_support.c.o[0m
+[14.011s] [ 60%] [32m[1mLinking CXX shared library libplanner_msgs__rosidl_typesupport_c.so[0m
+[14.091s] [ 61%] [32m[1mLinking C shared library libplanner_msgs__rosidl_typesupport_introspection_c.so[0m
+[14.133s] [ 61%] Built target planner_msgs__rosidl_typesupport_c
+[14.152s] [ 63%] [32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/planner_msgs/msg/detail/dds_fastrtps/no_fly_zone_array__type_support.cpp.o[0m
+[14.177s] [ 63%] Built target planner_msgs__rosidl_typesupport_introspection_c
+[14.196s] [ 65%] [32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/planner_msgs/srv/detail/dds_fastrtps/plan_path__type_support.cpp.o[0m
+[14.678s] [ 67%] [32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/planner_msgs/msg/detail/no_fly_zone_array__type_support.cpp.o[0m
+[14.683s] [ 69%] [32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/planner_msgs/srv/detail/plan_path__type_support.cpp.o[0m
+[14.683s] [ 70%] [32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/planner_msgs/msg/detail/no_fly_zone_array__type_support_c.cpp.o[0m
+[14.847s] [ 72%] [32m[1mLinking CXX shared library libplanner_msgs__rosidl_typesupport_cpp.so[0m
+[14.919s] [ 72%] Built target planner_msgs__rosidl_typesupport_cpp
+[14.927s] [ 74%] [32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/planner_msgs/srv/detail/plan_path__type_support_c.cpp.o[0m
+[15.152s] [ 76%] [32m[1mLinking CXX shared library libplanner_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[15.168s] [ 78%] [32m[1mLinking CXX shared library libplanner_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[15.309s] [ 78%] Built target planner_msgs__rosidl_typesupport_introspection_cpp
+[15.345s] [ 78%] Built target planner_msgs__rosidl_typesupport_fastrtps_cpp
+[15.394s] [ 80%] [32m[1mLinking CXX shared library libplanner_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[15.529s] [ 80%] Built target planner_msgs__rosidl_typesupport_fastrtps_c
+[15.574s] [ 80%] Built target planner_msgs
+[15.617s] [ 81%] [34m[1mGenerating Python code for ROS interfaces[0m
+[16.537s] [ 81%] Built target planner_msgs__py
+[16.580s] [ 83%] [32mBuilding C object CMakeFiles/planner_msgs__rosidl_generator_py.dir/rosidl_generator_py/planner_msgs/msg/_no_fly_zone_s.c.o[0m
+[16.580s] [ 85%] [32mBuilding C object CMakeFiles/planner_msgs__rosidl_generator_py.dir/rosidl_generator_py/planner_msgs/srv/_plan_path_s.c.o[0m
+[16.580s] [ 87%] [32mBuilding C object CMakeFiles/planner_msgs__rosidl_generator_py.dir/rosidl_generator_py/planner_msgs/msg/_no_fly_zone_array_s.c.o[0m
+[17.626s] [ 89%] [32m[1mLinking C shared library libplanner_msgs__rosidl_generator_py.so[0m
+[17.759s] [ 89%] Built target planner_msgs__rosidl_generator_py
+[17.805s] [ 92%] [32mBuilding C object CMakeFiles/planner_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/planner_msgs/_planner_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[17.806s] [ 92%] [32mBuilding C object CMakeFiles/planner_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/planner_msgs/_planner_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[17.806s] [ 94%] [32mBuilding C object CMakeFiles/planner_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/planner_msgs/_planner_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[17.959s] [ 96%] [32m[1mLinking C shared module rosidl_generator_py/planner_msgs/planner_msgs_s__rosidl_typesupport_c.so[0m
+[17.967s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/planner_msgs/planner_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[17.970s] [100%] [32m[1mLinking C shared module rosidl_generator_py/planner_msgs/planner_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[18.021s] [100%] Built target planner_msgs_s__rosidl_typesupport_c
+[18.038s] [100%] Built target planner_msgs_s__rosidl_typesupport_introspection_c
+[18.039s] [100%] Built target planner_msgs_s__rosidl_typesupport_fastrtps_c
+[18.064s] Invoked command in '/root/-px4-3d-path-planner/ros2_ws/build/planner_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/-px4-3d-path-planner/ros2_ws/build/planner_msgs -- -j8 -l8
+[18.085s] Invoking command in '/root/-px4-3d-path-planner/ros2_ws/build/planner_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /root/-px4-3d-path-planner/ros2_ws/build/planner_msgs
+[18.104s] -- Install configuration: ""
+[18.104s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/ament_index/resource_index/rosidl_interfaces/planner_msgs
+[18.104s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/msg/NoFlyZone.json
+[18.104s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/msg/NoFlyZoneArray.json
+[18.105s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/srv/PlanPath.json
+[18.105s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs
+[18.105s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv
+[18.106s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail
+[18.106s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__functions.h
+[18.106s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__description.c
+[18.106s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__type_support.c
+[18.107s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__struct.h
+[18.107s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__functions.c
+[18.107s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__type_support.h
+[18.107s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/plan_path.h
+[18.108s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg
+[18.108s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail
+[18.108s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__type_support.c
+[18.108s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__type_support.c
+[18.109s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__description.c
+[18.109s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__type_support.h
+[18.109s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__functions.h
+[18.109s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__functions.c
+[18.109s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__functions.c
+[18.110s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__description.c
+[18.110s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__type_support.h
+[18.110s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__struct.h
+[18.110s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__functions.h
+[18.111s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__struct.h
+[18.111s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/no_fly_zone_array.h
+[18.111s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/rosidl_generator_c__visibility_control.h
+[18.111s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/no_fly_zone.h
+[18.111s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/environment/library_path.sh
+[18.112s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/environment/library_path.dsv
+[18.112s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_generator_c.so
+[18.112s] -- Set non-toolchain portion of runtime path of "/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_generator_c.so" to ""
+[18.113s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs
+[18.113s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv
+[18.113s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail
+[18.113s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__rosidl_typesupport_fastrtps_c.h
+[18.114s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg
+[18.114s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail
+[18.114s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__rosidl_typesupport_fastrtps_c.h
+[18.114s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__rosidl_typesupport_fastrtps_c.h
+[18.114s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[18.115s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_fastrtps_c.so
+[18.115s] -- Set non-toolchain portion of runtime path of "/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[18.115s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs
+[18.115s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv
+[18.115s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail
+[18.116s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__struct.hpp
+[18.116s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__traits.hpp
+[18.116s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__builder.hpp
+[18.116s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__type_support.hpp
+[18.117s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/plan_path.hpp
+[18.117s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg
+[18.117s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/no_fly_zone_array.hpp
+[18.117s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail
+[18.117s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__type_support.hpp
+[18.117s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__struct.hpp
+[18.118s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__traits.hpp
+[18.118s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__struct.hpp
+[18.118s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__builder.hpp
+[18.118s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__builder.hpp
+[18.118s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__traits.hpp
+[18.119s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__type_support.hpp
+[18.119s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[18.119s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/no_fly_zone.hpp
+[18.119s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs
+[18.120s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv
+[18.120s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail
+[18.120s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/dds_fastrtps
+[18.120s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__rosidl_typesupport_fastrtps_cpp.hpp
+[18.120s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg
+[18.121s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail
+[18.121s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/dds_fastrtps
+[18.121s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__rosidl_typesupport_fastrtps_cpp.hpp
+[18.121s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__rosidl_typesupport_fastrtps_cpp.hpp
+[18.121s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[18.122s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_fastrtps_cpp.so
+[18.122s] -- Set non-toolchain portion of runtime path of "/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[18.122s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs
+[18.122s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv
+[18.122s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail
+[18.123s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__rosidl_typesupport_introspection_c.h
+[18.123s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__type_support.c
+[18.123s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg
+[18.123s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[18.123s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail
+[18.124s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__type_support.c
+[18.124s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__type_support.c
+[18.124s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__rosidl_typesupport_introspection_c.h
+[18.124s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__rosidl_typesupport_introspection_c.h
+[18.124s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_introspection_c.so
+[18.125s] -- Set non-toolchain portion of runtime path of "/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_introspection_c.so" to ""
+[18.125s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_c.so
+[18.125s] -- Set non-toolchain portion of runtime path of "/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_c.so" to ""
+[18.125s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs
+[18.125s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv
+[18.126s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail
+[18.126s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__type_support.cpp
+[18.126s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__rosidl_typesupport_introspection_cpp.hpp
+[18.126s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg
+[18.127s] -- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail
+[18.127s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__type_support.cpp
+[18.127s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__rosidl_typesupport_introspection_cpp.hpp
+[18.127s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__rosidl_typesupport_introspection_cpp.hpp
+[18.127s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__type_support.cpp
+[18.128s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_introspection_cpp.so
+[18.128s] -- Set non-toolchain portion of runtime path of "/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[18.128s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_cpp.so
+[18.128s] -- Set non-toolchain portion of runtime path of "/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_cpp.so" to ""
+[18.128s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/environment/pythonpath.sh
+[18.129s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/environment/pythonpath.dsv
+[18.129s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs-0.0.0-py3.12.egg-info
+[18.129s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs-0.0.0-py3.12.egg-info/dependency_links.txt
+[18.129s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs-0.0.0-py3.12.egg-info/top_level.txt
+[18.129s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs-0.0.0-py3.12.egg-info/PKG-INFO
+[18.130s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs-0.0.0-py3.12.egg-info/SOURCES.txt
+[18.130s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs
+[18.130s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/_planner_msgs_s.ep.rosidl_typesupport_c.c
+[18.130s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/planner_msgs_s__rosidl_typesupport_c.so
+[18.131s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/__init__.py
+[18.131s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/srv
+[18.131s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/srv/__init__.py
+[18.131s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/srv/_plan_path_s.c
+[18.131s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/srv/_plan_path.py
+[18.131s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/msg
+[18.132s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/msg/_no_fly_zone_array.py
+[18.132s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/msg/__init__.py
+[18.132s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/msg/_no_fly_zone.py
+[18.132s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/msg/_no_fly_zone_s.c
+[18.132s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/msg/_no_fly_zone_array_s.c
+[18.133s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/planner_msgs_s__rosidl_typesupport_introspection_c.so
+[18.133s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/planner_msgs_s__rosidl_typesupport_fastrtps_c.so
+[18.133s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/_planner_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[18.133s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/_planner_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[18.215s] Listing '/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs'...
+[18.216s] Compiling '/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/__init__.py'...
+[18.216s] Listing '/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/msg'...
+[18.216s] Compiling '/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/msg/__init__.py'...
+[18.216s] Compiling '/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/msg/_no_fly_zone.py'...
+[18.216s] Compiling '/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/msg/_no_fly_zone_array.py'...
+[18.216s] Listing '/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/srv'...
+[18.217s] Compiling '/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/srv/__init__.py'...
+[18.217s] Compiling '/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/srv/_plan_path.py'...
+[18.221s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/planner_msgs_s__rosidl_typesupport_fastrtps_c.so
+[18.223s] -- Set non-toolchain portion of runtime path of "/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/planner_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+[18.223s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/planner_msgs_s__rosidl_typesupport_introspection_c.so
+[18.223s] -- Set non-toolchain portion of runtime path of "/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/planner_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+[18.223s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/planner_msgs_s__rosidl_typesupport_c.so
+[18.223s] -- Set non-toolchain portion of runtime path of "/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/planner_msgs_s__rosidl_typesupport_c.so" to ""
+[18.224s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_generator_py.so
+[18.224s] -- Set non-toolchain portion of runtime path of "/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_generator_py.so" to ""
+[18.224s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/ament_index/resource_index/rust_packages/planner_msgs
+[18.225s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/rust
+[18.225s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/rust/build.rs
+[18.225s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/rust/Cargo.toml
+[18.225s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/rust/src
+[18.226s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/rust/src/srv.rs
+[18.226s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/rust/src/srv
+[18.226s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/rust/src/srv/rmw.rs
+[18.226s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/rust/src/lib.rs
+[18.227s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/rust/src/msg
+[18.227s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/rust/src/msg/rmw.rs
+[18.227s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/rust/src/msg.rs
+[18.227s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/msg/NoFlyZone.idl
+[18.228s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/msg/NoFlyZoneArray.idl
+[18.228s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/srv/PlanPath.idl
+[18.228s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/msg/NoFlyZone.msg
+[18.228s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/msg/NoFlyZoneArray.msg
+[18.228s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/srv/PlanPath.srv
+[18.229s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/ament_index/resource_index/package_run_dependencies/planner_msgs
+[18.229s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/ament_index/resource_index/parent_prefix_path/planner_msgs
+[18.229s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/environment/ament_prefix_path.sh
+[18.229s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/environment/ament_prefix_path.dsv
+[18.230s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/environment/path.sh
+[18.230s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/environment/path.dsv
+[18.230s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/local_setup.bash
+[18.230s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/local_setup.sh
+[18.231s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/local_setup.zsh
+[18.231s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/local_setup.dsv
+[18.232s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/package.dsv
+[18.232s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/ament_index/resource_index/packages/planner_msgs
+[18.232s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/export_planner_msgs__rosidl_generator_cExport.cmake
+[18.233s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/export_planner_msgs__rosidl_generator_cExport-noconfig.cmake
+[18.233s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/export_planner_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[18.233s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/export_planner_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[18.234s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/export_planner_msgs__rosidl_generator_cppExport.cmake
+[18.234s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/export_planner_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[18.234s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/export_planner_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[18.235s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/planner_msgs__rosidl_typesupport_introspection_cExport.cmake
+[18.236s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/planner_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[18.236s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/planner_msgs__rosidl_typesupport_cExport.cmake
+[18.236s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/planner_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[18.236s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/planner_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[18.236s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/planner_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[18.237s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/planner_msgs__rosidl_typesupport_cppExport.cmake
+[18.237s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/planner_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[18.238s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/export_planner_msgs__rosidl_generator_pyExport.cmake
+[18.238s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/export_planner_msgs__rosidl_generator_pyExport-noconfig.cmake
+[18.238s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/rosidl_cmake-extras.cmake
+[18.238s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[18.239s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[18.239s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[18.239s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[18.239s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[18.239s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[18.240s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/planner_msgsConfig.cmake
+[18.240s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/planner_msgsConfig-version.cmake
+[18.240s] -- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/package.xml
+[18.244s] Invoked command in '/root/-px4-3d-path-planner/ros2_ws/build/planner_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /root/-px4-3d-path-planner/ros2_ws/build/planner_msgs

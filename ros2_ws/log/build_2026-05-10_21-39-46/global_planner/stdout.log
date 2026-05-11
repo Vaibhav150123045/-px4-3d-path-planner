@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/global_planner/global_planner.egg-info
+writing ../../build/global_planner/global_planner.egg-info/PKG-INFO
+writing dependency_links to ../../build/global_planner/global_planner.egg-info/dependency_links.txt
+writing entry points to ../../build/global_planner/global_planner.egg-info/entry_points.txt
+writing requirements to ../../build/global_planner/global_planner.egg-info/requires.txt
+writing top-level names to ../../build/global_planner/global_planner.egg-info/top_level.txt
+writing manifest file '../../build/global_planner/global_planner.egg-info/SOURCES.txt'
+reading manifest file '../../build/global_planner/global_planner.egg-info/SOURCES.txt'
+writing manifest file '../../build/global_planner/global_planner.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /root/-px4-3d-path-planner/ros2_ws/build/global_planner/build
+creating /root/-px4-3d-path-planner/ros2_ws/build/global_planner/build/lib
+creating /root/-px4-3d-path-planner/ros2_ws/build/global_planner/build/lib/global_planner
+copying global_planner/planner_node.py -> /root/-px4-3d-path-planner/ros2_ws/build/global_planner/build/lib/global_planner
+copying global_planner/__init__.py -> /root/-px4-3d-path-planner/ros2_ws/build/global_planner/build/lib/global_planner
+running install
+running install_lib
+creating /root/-px4-3d-path-planner/ros2_ws/install/global_planner/lib/python3.12/site-packages/global_planner
+copying /root/-px4-3d-path-planner/ros2_ws/build/global_planner/build/lib/global_planner/planner_node.py -> /root/-px4-3d-path-planner/ros2_ws/install/global_planner/lib/python3.12/site-packages/global_planner
+copying /root/-px4-3d-path-planner/ros2_ws/build/global_planner/build/lib/global_planner/__init__.py -> /root/-px4-3d-path-planner/ros2_ws/install/global_planner/lib/python3.12/site-packages/global_planner
+byte-compiling /root/-px4-3d-path-planner/ros2_ws/install/global_planner/lib/python3.12/site-packages/global_planner/planner_node.py to planner_node.cpython-312.pyc
+byte-compiling /root/-px4-3d-path-planner/ros2_ws/install/global_planner/lib/python3.12/site-packages/global_planner/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /root/-px4-3d-path-planner/ros2_ws/install/global_planner/share/ament_index
+creating /root/-px4-3d-path-planner/ros2_ws/install/global_planner/share/ament_index/resource_index
+creating /root/-px4-3d-path-planner/ros2_ws/install/global_planner/share/ament_index/resource_index/packages
+copying resource/global_planner -> /root/-px4-3d-path-planner/ros2_ws/install/global_planner/share/ament_index/resource_index/packages
+copying package.xml -> /root/-px4-3d-path-planner/ros2_ws/install/global_planner/share/global_planner
+running install_egg_info
+Copying ../../build/global_planner/global_planner.egg-info to /root/-px4-3d-path-planner/ros2_ws/install/global_planner/lib/python3.12/site-packages/global_planner-0.0.0-py3.12.egg-info
+running install_scripts
+Installing planner_node script to /root/-px4-3d-path-planner/ros2_ws/install/global_planner/lib/global_planner
+writing list of installed files to '/root/-px4-3d-path-planner/ros2_ws/build/global_planner/install.log'

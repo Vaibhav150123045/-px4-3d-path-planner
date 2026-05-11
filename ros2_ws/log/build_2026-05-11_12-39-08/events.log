@@ -1,0 +1,456 @@
+[0.000000] (-) TimerEvent: {}
+[0.000845] (planner_msgs) JobQueued: {'identifier': 'planner_msgs', 'dependencies': OrderedDict()}
+[0.000896] (global_planner) JobQueued: {'identifier': 'global_planner', 'dependencies': OrderedDict({'planner_msgs': '/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs'})}
+[0.000925] (planner_msgs) JobStarted: {'identifier': 'planner_msgs'}
+[0.011210] (planner_msgs) JobProgress: {'identifier': 'planner_msgs', 'progress': 'cmake'}
+[0.011829] (planner_msgs) JobProgress: {'identifier': 'planner_msgs', 'progress': 'build'}
+[0.012481] (planner_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/-px4-3d-path-planner/ros2_ws/build/planner_msgs', '--', '-j8', '-l8'], 'cwd': '/root/-px4-3d-path-planner/ros2_ws/build/planner_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/root/PX4-Autopilot/Tools/simulation/gz/models:/opt/ros/jazzy/share', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'd8d69c63851e', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/root/-px4-3d-path-planner', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'PX4_DIR': '/root/PX4-Autopilot', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/root/-px4-3d-path-planner/ros2_ws/build/planner_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.082351] (planner_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099696] (-) TimerEvent: {}
+[0.199881] (-) TimerEvent: {}
+[0.266364] (planner_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 2.0.3 (/opt/ros/jazzy/share/builtin_interfaces/cmake)\n'}
+[0.300066] (-) TimerEvent: {}
+[0.328192] (planner_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.340424] (planner_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.353384] (planner_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.368599] (planner_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.381964] (planner_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.394134] (planner_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.396162] (planner_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.7 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[0.400217] (-) TimerEvent: {}
+[0.431529] (planner_msgs) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.7 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[0.500417] (-) TimerEvent: {}
+[0.600948] (-) TimerEvent: {}
+[0.701411] (-) TimerEvent: {}
+[0.801908] (-) TimerEvent: {}
+[0.902339] (-) TimerEvent: {}
+[1.002851] (-) TimerEvent: {}
+[1.103352] (-) TimerEvent: {}
+[1.203865] (-) TimerEvent: {}
+[1.304291] (-) TimerEvent: {}
+[1.331733] (planner_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[1.404411] (-) TimerEvent: {}
+[1.504832] (-) TimerEvent: {}
+[1.605225] (-) TimerEvent: {}
+[1.705642] (-) TimerEvent: {}
+[1.806022] (-) TimerEvent: {}
+[1.906408] (-) TimerEvent: {}
+[2.006833] (-) TimerEvent: {}
+[2.107203] (-) TimerEvent: {}
+[2.165585] (planner_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.207387] (-) TimerEvent: {}
+[2.307824] (-) TimerEvent: {}
+[2.408254] (-) TimerEvent: {}
+[2.415156] (planner_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.438024] (planner_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[2.508387] (-) TimerEvent: {}
+[2.608897] (-) TimerEvent: {}
+[2.709353] (-) TimerEvent: {}
+[2.809826] (-) TimerEvent: {}
+[2.910328] (-) TimerEvent: {}
+[2.911120] (planner_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[3.010489] (-) TimerEvent: {}
+[3.110879] (-) TimerEvent: {}
+[3.184726] (planner_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[3.211052] (-) TimerEvent: {}
+[3.311408] (-) TimerEvent: {}
+[3.344871] (planner_msgs) StdoutLine: {'line': b'-- Configuring done (3.3s)\n'}
+[3.411580] (-) TimerEvent: {}
+[3.511991] (-) TimerEvent: {}
+[3.580815] (planner_msgs) StdoutLine: {'line': b'-- Generating done (0.2s)\n'}
+[3.612166] (-) TimerEvent: {}
+[3.615330] (planner_msgs) StdoutLine: {'line': b'-- Build files have been written to: /root/-px4-3d-path-planner/ros2_ws/build/planner_msgs\n'}
+[3.701411] (planner_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[3.702469] (planner_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[3.712505] (-) TimerEvent: {}
+[3.726605] (planner_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_planner_msgs\n'}
+[3.812634] (-) TimerEvent: {}
+[3.913026] (-) TimerEvent: {}
+[4.013512] (-) TimerEvent: {}
+[4.026827] (planner_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[4.109582] (planner_msgs) StdoutLine: {'line': b'[  4%] Built target planner_msgs__rosidl_generator_type_description\n'}
+[4.113500] (-) TimerEvent: {}
+[4.134527] (planner_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.150887] (planner_msgs) StdoutLine: {'line': b'writing planner_msgs.egg-info/PKG-INFO\n'}
+[4.151257] (planner_msgs) StdoutLine: {'line': b'writing dependency_links to planner_msgs.egg-info/dependency_links.txt\n'}
+[4.151537] (planner_msgs) StdoutLine: {'line': b'writing top-level names to planner_msgs.egg-info/top_level.txt\n'}
+[4.153425] (planner_msgs) StdoutLine: {'line': b'[  6%] Built target planner_msgs__rs\n'}
+[4.163141] (planner_msgs) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.213638] (-) TimerEvent: {}
+[4.225587] (planner_msgs) StdoutLine: {'line': b"reading manifest file 'planner_msgs.egg-info/SOURCES.txt'\n"}
+[4.226181] (planner_msgs) StdoutLine: {'line': b"writing manifest file 'planner_msgs.egg-info/SOURCES.txt'\n"}
+[4.264479] (planner_msgs) StdoutLine: {'line': b'[  8%] Built target ament_cmake_python_build_planner_msgs_egg\n'}
+[4.313782] (-) TimerEvent: {}
+[4.414138] (-) TimerEvent: {}
+[4.514483] (-) TimerEvent: {}
+[4.564892] (planner_msgs) StdoutLine: {'line': b'[  8%] Built target planner_msgs__cpp\n'}
+[4.614592] (-) TimerEvent: {}
+[4.715533] (-) TimerEvent: {}
+[4.816006] (-) TimerEvent: {}
+[4.854374] (planner_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/planner_msgs__rosidl_generator_c.dir/rosidl_generator_c/planner_msgs/msg/detail/no_fly_zone__description.c.o\x1b[0m\n'}
+[4.854919] (planner_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/planner_msgs__rosidl_generator_c.dir/rosidl_generator_c/planner_msgs/srv/detail/plan_path__type_support.c.o\x1b[0m\n'}
+[4.855218] (planner_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/planner_msgs__rosidl_generator_c.dir/rosidl_generator_c/planner_msgs/srv/detail/plan_path__description.c.o\x1b[0m\n'}
+[4.855480] (planner_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/planner_msgs__rosidl_generator_c.dir/rosidl_generator_c/planner_msgs/msg/detail/no_fly_zone__functions.c.o\x1b[0m\n'}
+[4.856112] (planner_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/planner_msgs__rosidl_generator_c.dir/rosidl_generator_c/planner_msgs/msg/detail/no_fly_zone__type_support.c.o\x1b[0m\n'}
+[4.856601] (planner_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/planner_msgs__rosidl_generator_c.dir/rosidl_generator_c/planner_msgs/srv/detail/plan_path__functions.c.o\x1b[0m\n'}
+[4.916132] (-) TimerEvent: {}
+[5.016514] (-) TimerEvent: {}
+[5.116908] (-) TimerEvent: {}
+[5.217693] (-) TimerEvent: {}
+[5.318115] (-) TimerEvent: {}
+[5.418459] (-) TimerEvent: {}
+[5.423665] (planner_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32m\x1b[1mLinking C shared library libplanner_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[5.518590] (-) TimerEvent: {}
+[5.618987] (-) TimerEvent: {}
+[5.719491] (-) TimerEvent: {}
+[5.726961] (planner_msgs) StdoutLine: {'line': b'[ 24%] Built target planner_msgs__rosidl_generator_c\n'}
+[5.745633] (planner_msgs) StdoutLine: {'line': b'[ 26%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.750481] (planner_msgs) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.752343] (planner_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.753677] (planner_msgs) StdoutLine: {'line': b'[ 33%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.758751] (planner_msgs) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[5.763405] (planner_msgs) StdoutLine: {'line': b'[ 37%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.819634] (-) TimerEvent: {}
+[5.920057] (-) TimerEvent: {}
+[6.020451] (-) TimerEvent: {}
+[6.120826] (-) TimerEvent: {}
+[6.147618] (planner_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/planner_msgs/srv/plan_path__type_support.cpp.o\x1b[0m\n'}
+[6.147856] (planner_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/planner_msgs/msg/no_fly_zone__type_support.cpp.o\x1b[0m\n'}
+[6.163839] (planner_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/planner_msgs/msg/no_fly_zone__type_support.cpp.o\x1b[0m\n'}
+[6.171300] (planner_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/planner_msgs/srv/plan_path__type_support.cpp.o\x1b[0m\n'}
+[6.221018] (-) TimerEvent: {}
+[6.230493] (planner_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/planner_msgs/msg/detail/no_fly_zone__type_support.cpp.o\x1b[0m\n'}
+[6.256116] (planner_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/planner_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/planner_msgs/msg/detail/no_fly_zone__type_support.c.o\x1b[0m\n'}
+[6.321217] (-) TimerEvent: {}
+[6.351765] (planner_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/planner_msgs/msg/detail/no_fly_zone__type_support_c.cpp.o\x1b[0m\n'}
+[6.399626] (planner_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/planner_msgs/msg/detail/dds_fastrtps/no_fly_zone__type_support.cpp.o\x1b[0m\n'}
+[6.406710] (planner_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/planner_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/planner_msgs/srv/detail/plan_path__type_support.c.o\x1b[0m\n'}
+[6.421321] (-) TimerEvent: {}
+[6.521783] (-) TimerEvent: {}
+[6.581755] (planner_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking C shared library libplanner_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[6.621894] (-) TimerEvent: {}
+[6.656689] (planner_msgs) StdoutLine: {'line': b'[ 60%] Built target planner_msgs__rosidl_typesupport_introspection_c\n'}
+[6.678270] (planner_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/planner_msgs/srv/detail/plan_path__type_support_c.cpp.o\x1b[0m\n'}
+[6.695602] (planner_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libplanner_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[6.696114] (planner_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/planner_msgs/srv/detail/plan_path__type_support.cpp.o\x1b[0m\n'}
+[6.722507] (-) TimerEvent: {}
+[6.822972] (-) TimerEvent: {}
+[6.845892] (planner_msgs) StdoutLine: {'line': b'[ 66%] Built target planner_msgs__rosidl_typesupport_c\n'}
+[6.873167] (planner_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/planner_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/planner_msgs/srv/detail/dds_fastrtps/plan_path__type_support.cpp.o\x1b[0m\n'}
+[6.923071] (-) TimerEvent: {}
+[7.024517] (-) TimerEvent: {}
+[7.124888] (-) TimerEvent: {}
+[7.225239] (-) TimerEvent: {}
+[7.325606] (-) TimerEvent: {}
+[7.426741] (-) TimerEvent: {}
+[7.527147] (-) TimerEvent: {}
+[7.536614] (planner_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libplanner_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[7.598210] (planner_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libplanner_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[7.627282] (-) TimerEvent: {}
+[7.660610] (planner_msgs) StdoutLine: {'line': b'[ 73%] Built target planner_msgs__rosidl_typesupport_cpp\n'}
+[7.682532] (planner_msgs) StdoutLine: {'line': b'[ 73%] Built target planner_msgs__rosidl_typesupport_introspection_cpp\n'}
+[7.694346] (planner_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libplanner_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[7.727387] (-) TimerEvent: {}
+[7.773230] (planner_msgs) StdoutLine: {'line': b'[ 75%] Built target planner_msgs__rosidl_typesupport_fastrtps_c\n'}
+[7.827569] (-) TimerEvent: {}
+[7.928037] (-) TimerEvent: {}
+[7.949749] (planner_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libplanner_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[8.028213] (-) TimerEvent: {}
+[8.087646] (planner_msgs) StdoutLine: {'line': b'[ 77%] Built target planner_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[8.128392] (-) TimerEvent: {}
+[8.136762] (planner_msgs) StdoutLine: {'line': b'[ 77%] Built target planner_msgs\n'}
+[8.185709] (planner_msgs) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[8.228575] (-) TimerEvent: {}
+[8.329018] (-) TimerEvent: {}
+[8.429374] (-) TimerEvent: {}
+[8.529854] (-) TimerEvent: {}
+[8.630320] (-) TimerEvent: {}
+[8.731059] (-) TimerEvent: {}
+[8.771284] (planner_msgs) StdoutLine: {'line': b'[ 80%] Built target planner_msgs__py\n'}
+[8.831179] (-) TimerEvent: {}
+[8.845785] (planner_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/planner_msgs__rosidl_generator_py.dir/rosidl_generator_py/planner_msgs/msg/_no_fly_zone_s.c.o\x1b[0m\n'}
+[8.846073] (planner_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/planner_msgs__rosidl_generator_py.dir/rosidl_generator_py/planner_msgs/srv/_plan_path_s.c.o\x1b[0m\n'}
+[8.931328] (-) TimerEvent: {}
+[9.031818] (-) TimerEvent: {}
+[9.132329] (-) TimerEvent: {}
+[9.232871] (-) TimerEvent: {}
+[9.333363] (-) TimerEvent: {}
+[9.433899] (-) TimerEvent: {}
+[9.534497] (-) TimerEvent: {}
+[9.635011] (-) TimerEvent: {}
+[9.735860] (-) TimerEvent: {}
+[9.836311] (-) TimerEvent: {}
+[9.862100] (planner_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking C shared library libplanner_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[9.936494] (-) TimerEvent: {}
+[9.967782] (planner_msgs) StdoutLine: {'line': b'[ 86%] Built target planner_msgs__rosidl_generator_py\n'}
+[10.029517] (planner_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/planner_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/planner_msgs/_planner_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[10.030867] (planner_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/planner_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/planner_msgs/_planner_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[10.036599] (-) TimerEvent: {}
+[10.042614] (planner_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/planner_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/planner_msgs/_planner_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[10.136758] (-) TimerEvent: {}
+[10.188522] (planner_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/planner_msgs/planner_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[10.197642] (planner_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/planner_msgs/planner_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[10.207551] (planner_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/planner_msgs/planner_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[10.236892] (-) TimerEvent: {}
+[10.256390] (planner_msgs) StdoutLine: {'line': b'[100%] Built target planner_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[10.266344] (planner_msgs) StdoutLine: {'line': b'[100%] Built target planner_msgs_s__rosidl_typesupport_introspection_c\n'}
+[10.274018] (planner_msgs) StdoutLine: {'line': b'[100%] Built target planner_msgs_s__rosidl_typesupport_c\n'}
+[10.301020] (planner_msgs) CommandEnded: {'returncode': 0}
+[10.302311] (planner_msgs) JobProgress: {'identifier': 'planner_msgs', 'progress': 'install'}
+[10.318740] (planner_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/-px4-3d-path-planner/ros2_ws/build/planner_msgs'], 'cwd': '/root/-px4-3d-path-planner/ros2_ws/build/planner_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/root/PX4-Autopilot/Tools/simulation/gz/models:/opt/ros/jazzy/share', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'd8d69c63851e', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/root/-px4-3d-path-planner', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'PX4_DIR': '/root/PX4-Autopilot', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/root/-px4-3d-path-planner/ros2_ws/build/planner_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[10.337015] (-) TimerEvent: {}
+[10.338140] (planner_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.338534] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/ament_index/resource_index/rosidl_interfaces/planner_msgs\n'}
+[10.339034] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/msg/NoFlyZone.json\n'}
+[10.339350] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/srv/PlanPath.json\n'}
+[10.339766] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs\n'}
+[10.340103] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv\n'}
+[10.340294] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail\n'}
+[10.340531] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__functions.h\n'}
+[10.340806] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__description.c\n'}
+[10.341003] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__type_support.c\n'}
+[10.341264] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__struct.h\n'}
+[10.341588] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__functions.c\n'}
+[10.341813] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__type_support.h\n'}
+[10.342037] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/plan_path.h\n'}
+[10.342291] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg\n'}
+[10.342607] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail\n'}
+[10.342795] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__type_support.c\n'}
+[10.343047] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__type_support.c\n'}
+[10.343355] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__description.c\n'}
+[10.343582] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__type_support.h\n'}
+[10.343848] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__functions.h\n'}
+[10.344069] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__functions.c\n'}
+[10.344379] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__functions.c\n'}
+[10.344625] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__description.c\n'}
+[10.344820] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__type_support.h\n'}
+[10.345002] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__struct.h\n'}
+[10.345193] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__functions.h\n'}
+[10.345521] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__struct.h\n'}
+[10.345721] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/no_fly_zone_array.h\n'}
+[10.345898] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[10.346086] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/no_fly_zone.h\n'}
+[10.346282] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/environment/library_path.sh\n'}
+[10.346507] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/environment/library_path.dsv\n'}
+[10.346817] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_generator_c.so\n'}
+[10.347017] (planner_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_generator_c.so" to ""\n'}
+[10.347207] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs\n'}
+[10.347528] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv\n'}
+[10.347739] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail\n'}
+[10.347943] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__rosidl_typesupport_fastrtps_c.h\n'}
+[10.348126] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg\n'}
+[10.348303] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail\n'}
+[10.348639] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__rosidl_typesupport_fastrtps_c.h\n'}
+[10.348824] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__rosidl_typesupport_fastrtps_c.h\n'}
+[10.348980] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[10.349172] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[10.349479] (planner_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[10.349668] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs\n'}
+[10.349854] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv\n'}
+[10.350047] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail\n'}
+[10.350236] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__struct.hpp\n'}
+[10.350564] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__traits.hpp\n'}
+[10.350764] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__builder.hpp\n'}
+[10.350956] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__type_support.hpp\n'}
+[10.351219] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/plan_path.hpp\n'}
+[10.351411] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg\n'}
+[10.351639] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/no_fly_zone_array.hpp\n'}
+[10.351975] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail\n'}
+[10.352226] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__type_support.hpp\n'}
+[10.352417] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__struct.hpp\n'}
+[10.352661] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__traits.hpp\n'}
+[10.352931] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__struct.hpp\n'}
+[10.353127] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__builder.hpp\n'}
+[10.353308] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__builder.hpp\n'}
+[10.353522] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__traits.hpp\n'}
+[10.353714] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__type_support.hpp\n'}
+[10.353904] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[10.354215] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/no_fly_zone.hpp\n'}
+[10.354424] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs\n'}
+[10.354648] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv\n'}
+[10.354823] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail\n'}
+[10.354997] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/dds_fastrtps\n'}
+[10.355174] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.355367] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg\n'}
+[10.355586] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail\n'}
+[10.355873] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/dds_fastrtps\n'}
+[10.356101] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.356292] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.356531] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[10.356723] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[10.356910] (planner_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[10.357095] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs\n'}
+[10.357413] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv\n'}
+[10.357653] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail\n'}
+[10.357846] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__rosidl_typesupport_introspection_c.h\n'}
+[10.358030] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__type_support.c\n'}
+[10.358207] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg\n'}
+[10.358384] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[10.358612] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail\n'}
+[10.358792] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__type_support.c\n'}
+[10.358981] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__type_support.c\n'}
+[10.359313] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__rosidl_typesupport_introspection_c.h\n'}
+[10.359521] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__rosidl_typesupport_introspection_c.h\n'}
+[10.359684] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_introspection_c.so\n'}
+[10.359839] (planner_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[10.360049] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_c.so\n'}
+[10.360322] (planner_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_c.so" to ""\n'}
+[10.360557] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs\n'}
+[10.360746] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv\n'}
+[10.361068] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail\n'}
+[10.361253] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__type_support.cpp\n'}
+[10.361515] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/srv/detail/plan_path__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.361772] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg\n'}
+[10.361947] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail\n'}
+[10.362096] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__type_support.cpp\n'}
+[10.362274] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.362488] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.362691] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/include/planner_msgs/planner_msgs/msg/detail/no_fly_zone_array__type_support.cpp\n'}
+[10.362959] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[10.363234] (planner_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[10.365625] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_cpp.so\n'}
+[10.365848] (planner_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[10.366045] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/environment/pythonpath.sh\n'}
+[10.366237] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/environment/pythonpath.dsv\n'}
+[10.366458] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs-0.0.0-py3.12.egg-info\n'}
+[10.366661] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[10.366850] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[10.367037] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[10.367373] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[10.367605] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs\n'}
+[10.367924] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/_planner_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[10.368145] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/planner_msgs_s__rosidl_typesupport_c.so\n'}
+[10.368332] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/__init__.py\n'}
+[10.368557] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/srv\n'}
+[10.368751] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/srv/__init__.py\n'}
+[10.368942] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/srv/_plan_path_s.c\n'}
+[10.369122] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/srv/_plan_path.py\n'}
+[10.369297] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/msg\n'}
+[10.369510] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/msg/_no_fly_zone_array.py\n'}
+[10.369700] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/msg/__init__.py\n'}
+[10.369888] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/msg/_no_fly_zone.py\n'}
+[10.370066] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/msg/_no_fly_zone_s.c\n'}
+[10.370238] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/msg/_no_fly_zone_array_s.c\n'}
+[10.370558] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/planner_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[10.370746] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/planner_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[10.370900] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/_planner_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[10.371054] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/_planner_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[10.437154] (-) TimerEvent: {}
+[10.451593] (planner_msgs) StdoutLine: {'line': b"Listing '/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs'...\n"}
+[10.451843] (planner_msgs) StdoutLine: {'line': b"Compiling '/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/__init__.py'...\n"}
+[10.452053] (planner_msgs) StdoutLine: {'line': b"Listing '/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/msg'...\n"}
+[10.452205] (planner_msgs) StdoutLine: {'line': b"Compiling '/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/msg/__init__.py'...\n"}
+[10.452356] (planner_msgs) StdoutLine: {'line': b"Compiling '/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/msg/_no_fly_zone.py'...\n"}
+[10.452560] (planner_msgs) StdoutLine: {'line': b"Listing '/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/srv'...\n"}
+[10.452716] (planner_msgs) StdoutLine: {'line': b"Compiling '/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/srv/__init__.py'...\n"}
+[10.452863] (planner_msgs) StdoutLine: {'line': b"Compiling '/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/srv/_plan_path.py'...\n"}
+[10.457088] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/planner_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[10.457741] (planner_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/planner_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[10.458171] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/planner_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[10.458811] (planner_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/planner_msgs_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[10.459193] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/planner_msgs_s__rosidl_typesupport_c.so\n'}
+[10.459804] (planner_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages/planner_msgs/planner_msgs_s__rosidl_typesupport_c.so" to ""\n'}
+[10.460246] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_generator_py.so\n'}
+[10.460961] (planner_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/libplanner_msgs__rosidl_generator_py.so" to ""\n'}
+[10.461271] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/ament_index/resource_index/rust_packages/planner_msgs\n'}
+[10.461493] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/rust\n'}
+[10.461694] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/rust/build.rs\n'}
+[10.461958] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/rust/Cargo.toml\n'}
+[10.462138] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/rust/src\n'}
+[10.462334] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/rust/src/srv.rs\n'}
+[10.462676] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/rust/src/srv\n'}
+[10.462904] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/rust/src/srv/rmw.rs\n'}
+[10.463101] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/rust/src/lib.rs\n'}
+[10.463397] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/rust/src/msg\n'}
+[10.463640] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/rust/src/msg/rmw.rs\n'}
+[10.463829] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/rust/src/msg.rs\n'}
+[10.464095] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/msg/NoFlyZone.idl\n'}
+[10.464295] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/srv/PlanPath.idl\n'}
+[10.464604] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/msg/NoFlyZone.msg\n'}
+[10.464785] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/srv/PlanPath.srv\n'}
+[10.465043] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/ament_index/resource_index/package_run_dependencies/planner_msgs\n'}
+[10.465233] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/ament_index/resource_index/parent_prefix_path/planner_msgs\n'}
+[10.465535] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/environment/ament_prefix_path.sh\n'}
+[10.465801] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/environment/ament_prefix_path.dsv\n'}
+[10.465984] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/environment/path.sh\n'}
+[10.466161] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/environment/path.dsv\n'}
+[10.466355] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/local_setup.bash\n'}
+[10.466590] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/local_setup.sh\n'}
+[10.466901] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/local_setup.zsh\n'}
+[10.467088] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/local_setup.dsv\n'}
+[10.467266] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/package.dsv\n'}
+[10.467477] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/ament_index/resource_index/packages/planner_msgs\n'}
+[10.467680] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/export_planner_msgs__rosidl_generator_cExport.cmake\n'}
+[10.467864] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/export_planner_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[10.468192] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/export_planner_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[10.468370] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/export_planner_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[10.468611] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/export_planner_msgs__rosidl_generator_cppExport.cmake\n'}
+[10.468793] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/export_planner_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[10.468969] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/export_planner_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[10.469157] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/planner_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[10.469337] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/planner_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[10.469691] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/planner_msgs__rosidl_typesupport_cExport.cmake\n'}
+[10.469877] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/planner_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[10.470057] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/planner_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[10.470237] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/planner_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[10.470417] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/planner_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[10.470664] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/planner_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[10.470846] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/export_planner_msgs__rosidl_generator_pyExport.cmake\n'}
+[10.471024] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/export_planner_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[10.471198] (planner_msgs) StdoutLine: {'line': b'-- Installing: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[10.471477] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[10.471801] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[10.471997] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[10.472148] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[10.472295] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[10.472544] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[10.472702] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/planner_msgsConfig.cmake\n'}
+[10.472851] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/cmake/planner_msgsConfig-version.cmake\n'}
+[10.472998] (planner_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/share/planner_msgs/package.xml\n'}
+[10.475119] (planner_msgs) CommandEnded: {'returncode': 0}
+[10.527057] (planner_msgs) JobEnded: {'identifier': 'planner_msgs', 'rc': 0}
+[10.530164] (global_planner) JobStarted: {'identifier': 'global_planner'}
+[10.537312] (-) TimerEvent: {}
+[10.637703] (-) TimerEvent: {}
+[10.738089] (-) TimerEvent: {}
+[10.838956] (-) TimerEvent: {}
+[10.940334] (-) TimerEvent: {}
+[11.040836] (-) TimerEvent: {}
+[11.141272] (-) TimerEvent: {}
+[11.241747] (-) TimerEvent: {}
+[11.342199] (-) TimerEvent: {}
+[11.442660] (-) TimerEvent: {}
+[11.543119] (-) TimerEvent: {}
+[11.580586] (global_planner) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/global_planner', 'build', '--build-base', '/root/-px4-3d-path-planner/ros2_ws/build/global_planner/build', 'install', '--record', '/root/-px4-3d-path-planner/ros2_ws/build/global_planner/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/root/-px4-3d-path-planner/ros2_ws/src/global_planner', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/root/PX4-Autopilot/Tools/simulation/gz/models:/opt/ros/jazzy/share', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'd8d69c63851e', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/root/-px4-3d-path-planner', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'PX4_DIR': '/root/PX4-Autopilot', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs:/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/root/-px4-3d-path-planner/ros2_ws/build/global_planner', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/root/-px4-3d-path-planner/ros2_ws/build/global_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/-px4-3d-path-planner/ros2_ws/install/global_planner/lib/python3.12/site-packages:/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/root/-px4-3d-path-planner/ros2_ws/install/planner_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[11.643308] (-) TimerEvent: {}
+[11.743782] (-) TimerEvent: {}
+[11.844262] (-) TimerEvent: {}
+[11.928085] (global_planner) StdoutLine: {'line': b'running egg_info\n'}
+[11.944465] (-) TimerEvent: {}
+[12.041781] (global_planner) StdoutLine: {'line': b'writing ../../build/global_planner/global_planner.egg-info/PKG-INFO\n'}
+[12.042249] (global_planner) StdoutLine: {'line': b'writing dependency_links to ../../build/global_planner/global_planner.egg-info/dependency_links.txt\n'}
+[12.042501] (global_planner) StdoutLine: {'line': b'writing entry points to ../../build/global_planner/global_planner.egg-info/entry_points.txt\n'}
+[12.042830] (global_planner) StdoutLine: {'line': b'writing requirements to ../../build/global_planner/global_planner.egg-info/requires.txt\n'}
+[12.042983] (global_planner) StdoutLine: {'line': b'writing top-level names to ../../build/global_planner/global_planner.egg-info/top_level.txt\n'}
+[12.044548] (-) TimerEvent: {}
+[12.092864] (global_planner) StdoutLine: {'line': b"reading manifest file '../../build/global_planner/global_planner.egg-info/SOURCES.txt'\n"}
+[12.093640] (global_planner) StdoutLine: {'line': b"writing manifest file '../../build/global_planner/global_planner.egg-info/SOURCES.txt'\n"}
+[12.094030] (global_planner) StdoutLine: {'line': b'running build\n'}
+[12.094230] (global_planner) StdoutLine: {'line': b'running build_py\n'}
+[12.094556] (global_planner) StdoutLine: {'line': b'copying global_planner/planner_node.py -> /root/-px4-3d-path-planner/ros2_ws/build/global_planner/build/lib/global_planner\n'}
+[12.094732] (global_planner) StdoutLine: {'line': b'running install\n'}
+[12.101276] (global_planner) StdoutLine: {'line': b'running install_lib\n'}
+[12.125621] (global_planner) StdoutLine: {'line': b'copying /root/-px4-3d-path-planner/ros2_ws/build/global_planner/build/lib/global_planner/planner_node.py -> /root/-px4-3d-path-planner/ros2_ws/install/global_planner/lib/python3.12/site-packages/global_planner\n'}
+[12.126230] (global_planner) StdoutLine: {'line': b'byte-compiling /root/-px4-3d-path-planner/ros2_ws/install/global_planner/lib/python3.12/site-packages/global_planner/planner_node.py to planner_node.cpython-312.pyc\n'}
+[12.129207] (global_planner) StdoutLine: {'line': b'running install_data\n'}
+[12.129516] (global_planner) StdoutLine: {'line': b'running install_egg_info\n'}
+[12.144729] (-) TimerEvent: {}
+[12.154624] (global_planner) StdoutLine: {'line': b"removing '/root/-px4-3d-path-planner/ros2_ws/install/global_planner/lib/python3.12/site-packages/global_planner-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[12.154962] (global_planner) StdoutLine: {'line': b'Copying ../../build/global_planner/global_planner.egg-info to /root/-px4-3d-path-planner/ros2_ws/install/global_planner/lib/python3.12/site-packages/global_planner-0.0.0-py3.12.egg-info\n'}
+[12.155888] (global_planner) StdoutLine: {'line': b'running install_scripts\n'}
+[12.221905] (global_planner) StdoutLine: {'line': b'Installing planner_node script to /root/-px4-3d-path-planner/ros2_ws/install/global_planner/lib/global_planner\n'}
+[12.222314] (global_planner) StdoutLine: {'line': b"writing list of installed files to '/root/-px4-3d-path-planner/ros2_ws/build/global_planner/install.log'\n"}
+[12.244903] (-) TimerEvent: {}
+[12.247893] (global_planner) CommandEnded: {'returncode': 0}
+[12.262179] (global_planner) JobEnded: {'identifier': 'global_planner', 'rc': 0}
+[12.264314] (-) EventReactorShutdown: {}

@@ -1,0 +1,32 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from planner_msgs/srv/PlanPath.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/PointStamped.idl"
+#include "nav_msgs/msg/Path.idl"
+#include "planner_msgs/msg/NoFlyZone.idl"
+
+module planner_msgs {
+  module srv {
+    struct PlanPath_Request {
+      geometry_msgs::msg::PointStamped start;
+
+      geometry_msgs::msg::PointStamped goal;
+
+      double altitude_min;
+
+      double altitude_max;
+
+      sequence<planner_msgs::msg::NoFlyZone> no_fly_zones;
+    };
+    struct PlanPath_Response {
+      nav_msgs::msg::Path path;
+
+      boolean success;
+
+      double planning_time_ms;
+
+      string message;
+    };
+  };
+};

@@ -1,0 +1,2 @@
+Invoking command in '/root/-px4-3d-path-planner/ros2_ws/build/planner_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/-px4-3d-path-planner/ros2_ws/build/planner_msgs -- -j8 -l8
+Invoked command in '/root/-px4-3d-path-planner/ros2_ws/build/planner_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/-px4-3d-path-planner/ros2_ws/build/planner_msgs -- -j8 -l8

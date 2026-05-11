@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from planner_msgs/msg/NoFlyZone.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+
+module planner_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Axis-aligned no-fly zone in the world frame. min_corner.x <= max_corner.x etc.")
+    struct NoFlyZone {
+      geometry_msgs::msg::Point min_corner;
+
+      geometry_msgs::msg::Point max_corner;
+    };
+  };
+};

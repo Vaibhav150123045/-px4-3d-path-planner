@@ -1,0 +1,2 @@
+[console_scripts]
+planner_node = global_planner.planner_node:main

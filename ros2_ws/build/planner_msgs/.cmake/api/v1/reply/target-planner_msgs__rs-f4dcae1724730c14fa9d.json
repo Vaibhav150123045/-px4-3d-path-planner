@@ -1,0 +1,73 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/root/-px4-3d-path-planner/ros2_ws/build/planner_msgs/planner_msgs__rs/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 35,
+				"parent" : 0
+			}
+		]
+	},
+	"id" : "planner_msgs__rs::@1d056c43fb50df3dc6ce",
+	"name" : "planner_msgs__rs",
+	"paths" : 
+	{
+		"build" : "planner_msgs__rs",
+		"source" : "/root/-px4-3d-path-planner/ros2_ws/build/planner_msgs/planner_msgs__rs"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/root/-px4-3d-path-planner/ros2_ws/build/planner_msgs/planner_msgs__rs/CMakeFiles/planner_msgs__rs",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/root/-px4-3d-path-planner/ros2_ws/build/planner_msgs/planner_msgs__rs/CMakeFiles/planner_msgs__rs.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/root/-px4-3d-path-planner/ros2_ws/build/planner_msgs/rosidl_generator_rs/planner_msgs/rust/src/lib.rs.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

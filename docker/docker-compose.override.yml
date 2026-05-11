@@ -1,0 +1,15 @@
+services:
+  px4-sitl:
+    build:
+      context: ../-px4-3d-path-planner
+      dockerfile: docker/Dockerfile
+    image: px4-planner:latest
+
+    volumes:
+      - ../-px4-3d-path-planner:/root/-px4-3d-path-planner:rw
+
+    ports: !override
+      - "5902:5901"
+      - "6080:6080"
+      - "14550:14550/udp"
+      - "18570:18570/udp"

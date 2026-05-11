@@ -17,7 +17,6 @@ find_package(std_msgs REQUIRED)
 # Generate the custom interfaces
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/NoFlyZone.msg"
-  "msg/NoFlyZoneArray.msg"
   "srv/PlanPath.srv"
   DEPENDENCIES geometry_msgs nav_msgs std_msgs builtin_interfaces
 )
