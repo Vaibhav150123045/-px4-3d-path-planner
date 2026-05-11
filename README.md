@@ -3,7 +3,7 @@
 
 Vaibhav Motwani, 23-139-660
 
-Repository: [link](https://github.com/Vaibhav150123045/-px4-3d-path-planne)
+Repository: [link](https://github.com/Vaibhav150123045/-px4-3d-path-planner)
 
 
 # 3D Path Planning for Autonomous UAVs
