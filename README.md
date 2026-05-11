@@ -12,7 +12,7 @@ This repository contains a complete implementation of a hierarchical path planni
 - PX4-Autopilot (flight control)
 - OctoMap (3D spatial mapping)
 - MAVSDK (vehicle communication)
-- GPU acceleration (optional, for rendering)
+
 
 All components execute within a unified Docker container, ensuring reproducible deployments across different host systems.
 
@@ -65,13 +65,12 @@ All components execute within a unified Docker container, ensuring reproducible 
 ## System Requirements
 
 ### Hardware
-- **GPU:** NVIDIA CUDA-capable processor (recommended for real-time simulation)
 - **RAM:** 16 GB minimum
 - **Storage:** 15 GB for base image and dependencies
 - **Docker Runtime:** Engine 24+ with Compose v2
 
 ### Software
-- NVIDIA Container Toolkit (for GPU support; CPU mode available but slower)
+- CPU Mode
 - Docker Engine 24.0 or newer
 - Standard Unix utilities (git, bash)
 
@@ -108,7 +107,7 @@ Layer configuration files and build the container image:
 cd ~/workspace/px4-sim
 
 # Link this project's Docker overrides
-ln -s ../3d-path-planner/docker/docker-compose.override.yml .
+ln -s ../-px4-3d-path-planner/docker/docker-compose.override.yml .
 
 # Build and launch the container
 docker compose build
@@ -122,7 +121,7 @@ Inside the running container, compile the planning modules:
 ```bash
 docker exec -it px4_sitl bash -lc '
   source /opt/ros/jazzy/setup.bash &&
-  cd /root/3d-path-planner/ros2_ws &&
+  cd /root/-px4-3d-path-planner/ros2_ws &&
   colcon build --symlink-install
 '
 ```
@@ -136,11 +135,11 @@ docker exec -it px4_sitl bash -lc '
   source /opt/ros/jazzy/setup.bash &&
   python3 -c "from mavsdk import System; print(\"✓ MAVSDK active\")" &&
   dpkg -l | grep -E "octomap|ompl" | awk "{print \$2, \$3}" &&
-  nvidia-smi --query-gpu=name --format=csv,noheader
+  ,noheader
 '
 ```
 
-Expected output includes MAVSDK confirmation, OctoMap/OMPL library versions, and GPU model (if present).
+Expected output includes MAVSDK confirmation, OctoMap/OMPL library versions.
 
 ---
 
@@ -157,7 +156,7 @@ docker exec -it px4_sitl bash -lc '
   ln -sf /root/3d-path-planner/worlds/simulation_world.sdf \
           /root/PX4-Autopilot/Tools/simulation/gz/worlds/simulation_world.sdf &&
   cd /root/PX4-Autopilot &&
-  PX4_GZ_WORLD=simulation_world make px4_sitl gz_x500_depth
+  PX4_GZ_WORLD=demo_world make px4_sitl gz_x500_depth
 '
 ```
 
@@ -168,7 +167,7 @@ Wait for the message indicating successful initialization (autopilot ready at `p
 Spawn obstacles and landmarks in the simulated environment:
 
 ```bash
-docker exec -it px4_sitl /root/3d-path-planner/scripts/populate_scene.sh
+docker exec -it px4_sitl /root/-px4-3d-path-planner/helpful_scripts/spawn_artifacts.sh
 ```
 
 This loads 10+ entities including buildings, vegetation, and position markers.
@@ -241,7 +240,7 @@ Start the graph-based planning module:
 ```bash
 docker exec -it px4_sitl bash -lc '
   source /opt/ros/jazzy/setup.bash &&
-  source /root/3d-path-planner/ros2_ws/install/setup.bash &&
+  source /root/-px4-3d-path-planner/ros2_ws/install/setup.bash &&
   ros2 run global_planner planning_service_node
 '
 ```
@@ -273,8 +272,8 @@ Compute and execute the autonomous flight trajectory:
 ```bash
 docker exec -it px4_sitl bash -lc '
   source /opt/ros/jazzy/setup.bash &&
-  source /root/3d-path-planner/ros2_ws/install/setup.bash &&
-  python3 /root/3d-path-planner/scripts/execute_mission.py
+  source /root/-px4-3d-path-planner/ros2_ws/install/setup.bash &&
+  python3 /root/-px4-3d-path-planner/helpful_scripts/mission_run.py
 '
 ```
 
