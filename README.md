@@ -25,6 +25,10 @@ This repository contains a complete implementation of a hierarchical path planni
 All components execute within a unified Docker container, ensuring reproducible deployments across different host systems.
 
 ---
+## Demo video
+
+![Demo GIF](media/demo_video.gif)
+
 
 ## System Architecture
 
