@@ -4,7 +4,7 @@
 Vaibhav Motwani, 23-139-660
 
 Repository: [link](https://github.com/Vaibhav150123045/-px4-3d-path-planner)
-
+Dockerhub image: https://hub.docker.com/repository/docker/vm150123045/px4_3d_planner
 
 # 3D Path Planning for Autonomous UAVs
 
