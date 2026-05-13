@@ -1,22 +1,30 @@
 #!/usr/bin/env python3
 """Plan a path with /plan_path and fly it on PX4 SITL via MAVSDK.
+   *** Canyon Gauntlet (v2) — arrival-gated waypoint streaming ***
 
-Flow: rclpy -> service call -> shutdown -> asyncio -> MAVSDK arm ->
-seed OFFBOARD setpoints at climb altitude -> start OFFBOARD ->
-stream remaining setpoints at 2 Hz -> land. ENU planner output is
-rotated to NED setpoints (north = y, east = x, down = -z).
+   Route  : START (0, 0, 6)  →  GOAL (60, 0, 6)   [ENU, metres]
+   Alt band: 4 – 10 m
 
-Auto-takeoff is intentionally skipped; OFFBOARD lifts the drone
-directly to the first setpoint, avoiding the takeoff/OFFBOARD yaw
-fight that causes spinning during the mode transition.
+   No-fly zones mirror spawn_world_v2.sh obstacle footprints,
+   each padded by 2 m horizontally and 2 m vertically.
 
-Run while planner_node, octomap_server, depth bridge, and PX4 SITL
-are all up:
+   Flow: rclpy -> /plan_path service -> shutdown -> asyncio -> MAVSDK
+   arm -> seed OFFBOARD setpoints -> start OFFBOARD ->
+   for each waypoint: command it, keep re-sending at HEARTBEAT_HZ
+   (satisfies PX4's OFFBOARD watchdog), poll NED position telemetry,
+   advance only when within ACCEPT_RADIUS_M -> land.
 
-    docker exec -it px4_sitl bash -lc '
-      source /opt/ros/jazzy/setup.bash &&
-      source /root/3d-path-planner/ros2_ws/install/setup.bash &&
-      python3 /root/3d-path-planner/scripts/run_mission.py'
+   This is robust at any command rate (including 0.7 Hz) because
+   advancement is driven by arrival, not by a fixed sleep timer.
+
+   ENU planner output is rotated to NED for PX4:
+       north = y,  east = x,  down = −z
+
+   Run inside the container:
+       docker exec -it px4_sitl bash -lc '
+         source /opt/ros/jazzy/setup.bash &&
+         source /root/3d-path-planner/ros2_ws/install/setup.bash &&
+         python3 /root/3d-path-planner/scripts/run_mission_v2.py'
 """
 
 import asyncio
@@ -33,25 +41,46 @@ from mavsdk.offboard import OffboardError, PositionNedYaw
 from planner_msgs.msg import NoFlyZone
 from planner_msgs.srv import PlanPath
 
+# ---------------------------------------------------------------------------
+# Waypoint-arrival tuning
+# ---------------------------------------------------------------------------
+# PX4 drops out of OFFBOARD if it receives no setpoint for >500 ms.
+# We re-send the current setpoint at this rate while waiting for arrival.
+HEARTBEAT_HZ: float = 5.0          # Hz — must be > 2 Hz to satisfy watchdog
 
-START = (0.0, 0.0, 5.0)
-GOAL = (50.0, 0.0, 5.0)
-ALT_MIN = 3.0
-ALT_MAX = 8.0
+# Drone is considered "arrived" when 3-D distance to setpoint < this value.
+ACCEPT_RADIUS_M: float = 1.2       # metres — tighten for precision, loosen for speed
 
-# Prior-map building bounds, mirroring scripts/spawn_world.sh, padded by 2 m
-# horizontally for drone half-span (~0.4 m) + tracking error in OFFBOARD mode.
+# Hard timeout per waypoint: give up and advance if the drone hasn't arrived
+# within this many seconds (catches stalls near obstacles).
+WAYPOINT_TIMEOUT_S: float = 60.0   # seconds
+
+# ---------------------------------------------------------------------------
+# Mission parameters — Canyon Gauntlet v2
+# ---------------------------------------------------------------------------
+START   = (0.0,  0.0, 6.0)
+GOAL    = (60.0, 0.0, 6.0)
+ALT_MIN = 4.0
+ALT_MAX = 10.0
+
+# No-fly zones: (min_corner_ENU, max_corner_ENU), padded 2 m each side.
+#
+#  gate_east   — box centre (15, 0, 6), size 4×2×12  → extents x∈[13,17] y∈[-1,1]  z∈[0,12]
+#  wing_n      — box centre (25, 9, 4.5), size 6×4×9  → extents x∈[22,28] y∈[7,11]  z∈[0,9]
+#  wing_s      — box centre (25,-9, 4.5), size 6×4×9  → extents x∈[22,28] y∈[-11,-7] z∈[0,9]
+#  diagonal_ne — box centre (38, 6, 3.5), size 5×5×7  → extents x∈[35.5,40.5] y∈[3.5,8.5] z∈[0,7]
+#  low_tunnel  — box centre (50, 0, 1.5), size 8×14×3 → extents x∈[46,54] y∈[-7,7] z∈[0,3]
 NO_FLY_ZONES = [
-    # tall_blocker — box (27..33, -3..3, 0..14)
-    ((25.0, -5.0, 0.0), (35.0, 5.0, 16.0)),
-    # mid_n1 — box (9.5..14.5, 7.5..12.5, 0..8)
-    (( 7.5,  5.5, 0.0), (16.5, 14.5, 10.0)),
-    # mid_s1 — box (9.5..14.5, -12.5..-7.5, 0..8)
-    (( 7.5, -14.5, 0.0), (16.5, -5.5, 10.0)),
-    # low_n2 — box (43..47, 8..12, 0..4)
-    ((41.0,  6.0, 0.0), (49.0, 14.0,  6.0)),
-    # low_s2 — box (43..47, -12..-8, 0..4)
-    ((41.0, -14.0, 0.0), (49.0, -6.0,  6.0)),
+    # gate_east
+    ((11.0,  -3.0, 0.0), (19.0,   3.0, 14.0)),
+    # wing_n
+    ((20.0,   5.0, 0.0), (30.0,  13.0, 11.0)),
+    # wing_s
+    ((20.0, -13.0, 0.0), (30.0,  -5.0, 11.0)),
+    # diagonal_ne
+    ((33.5,   1.5, 0.0), (42.5,  10.5,  9.0)),
+    # low_tunnel
+    ((44.0,  -9.0, 0.0), (56.0,   9.0,  5.0)),
 ]
 
 
@@ -97,9 +126,14 @@ def request_plan() -> Path:
 
 
 def path_to_ned_setpoints(path: Path) -> list[PositionNedYaw]:
-    """ENU planner -> NED PX4: north=y, east=x, down=-z. Yaw fixed to 0."""
+    """ENU planner → NED PX4: north = y, east = x, down = −z. Yaw fixed to 0."""
     return [
-        PositionNedYaw(p.pose.position.y, p.pose.position.x, -p.pose.position.z, 0.0)
+        PositionNedYaw(
+            p.pose.position.y,   # north
+            p.pose.position.x,   # east
+            -p.pose.position.z,  # down
+            0.0,                 # yaw
+        )
         for p in path.poses
     ]
 
@@ -112,6 +146,45 @@ def subsample(setpoints: list, target_count: int = 25) -> list:
     if out[-1] is not setpoints[-1]:
         out.append(setpoints[-1])
     return out
+
+
+async def _current_ned(drone: System) -> tuple[float, float, float]:
+    """Return the drone's current NED position as (north, east, down)."""
+    async for pos in drone.telemetry.position_velocity_ned():
+        return (
+            pos.position.north_m,
+            pos.position.east_m,
+            pos.position.down_m,
+        )
+
+
+async def _wait_for_arrival(
+    drone: System,
+    sp: PositionNedYaw,
+    *,
+    accept_radius: float = ACCEPT_RADIUS_M,
+    timeout: float = WAYPOINT_TIMEOUT_S,
+    heartbeat_hz: float = HEARTBEAT_HZ,
+) -> bool:
+    """Re-send *sp* at *heartbeat_hz* until the drone is within *accept_radius*
+    metres (3-D) of the setpoint, or *timeout* seconds have elapsed.
+
+    Returns True on arrival, False on timeout (caller logs and advances).
+    """
+    interval = 1.0 / heartbeat_hz
+    elapsed = 0.0
+    while elapsed < timeout:
+        await drone.offboard.set_position_ned(sp)
+        north, east, down = await _current_ned(drone)
+        dn = sp.north_m - north
+        de = sp.east_m  - east
+        dd = sp.down_m  - down
+        dist = (dn**2 + de**2 + dd**2) ** 0.5
+        if dist < accept_radius:
+            return True
+        await asyncio.sleep(interval)
+        elapsed += interval
+    return False
 
 
 async def fly_path(setpoints: list[PositionNedYaw]) -> None:
@@ -132,8 +205,12 @@ async def fly_path(setpoints: list[PositionNedYaw]) -> None:
     print('Arming ...')
     await drone.action.arm()
 
+    # Seed the first setpoint so PX4 accepts the OFFBOARD mode switch.
     first = setpoints[0]
-    print(f'Seeding OFFBOARD setpoint  N={first.north_m:.1f} E={first.east_m:.1f} D={first.down_m:.1f} ...')
+    print(
+        f'Seeding OFFBOARD setpoint  '
+        f'N={first.north_m:.1f}  E={first.east_m:.1f}  D={first.down_m:.1f} ...'
+    )
     for _ in range(20):
         await drone.offboard.set_position_ned(first)
         await asyncio.sleep(0.05)
@@ -144,23 +221,26 @@ async def fly_path(setpoints: list[PositionNedYaw]) -> None:
         print(f'OFFBOARD start failed: {e}', file=sys.stderr)
         await drone.action.disarm()
         sys.exit(1)
-    print('OFFBOARD active. Climbing to first setpoint ...')
+    print('OFFBOARD active.')
 
-    await asyncio.sleep(8.0)
-
-    # Slower stream — 1 setpoint per 1.5 s — gives the drone time to actually
-    # arrive at each waypoint before the next one is commanded. Tracking lag
-    # is what was clipping the obstacle corners.
-    print(f'Streaming {len(setpoints) - 1} more setpoints @ ~0.7 Hz ...')
-    for i, sp in enumerate(setpoints[1:], start=1):
-        await drone.offboard.set_position_ned(sp)
-        print(f'  {i:>3}/{len(setpoints) - 1}  N={sp.north_m:6.2f} E={sp.east_m:6.2f} D={sp.down_m:6.2f}')
-        await asyncio.sleep(1.5)
-
-    print('Holding final setpoint for 5 s ...')
-    for _ in range(10):
-        await drone.offboard.set_position_ned(setpoints[-1])
-        await asyncio.sleep(0.5)
+    # --- Fly each waypoint, advancing only on arrival ---
+    total = len(setpoints)
+    for i, sp in enumerate(setpoints):
+        print(
+            f'WP {i + 1:>3}/{total}  '
+            f'N={sp.north_m:6.2f}  E={sp.east_m:6.2f}  D={sp.down_m:6.2f}  '
+            f'— commanding ...',
+            end='  ',
+            flush=True,
+        )
+        arrived = await _wait_for_arrival(drone, sp)
+        if arrived:
+            print('arrived.')
+        else:
+            print(
+                f'TIMEOUT after {WAYPOINT_TIMEOUT_S:.0f} s — advancing anyway.',
+                file=sys.stderr,
+            )
 
     print('Stopping OFFBOARD and landing ...')
     try:
